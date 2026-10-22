@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webシステム構築基礎 第２回課題</title>
+    <title>Webシステム構築基礎 第３回課題</title>
 </head>
 <body>
     <header>
-        <h1>Webシステム構築基礎 第２回課題</h1>
+        <h1>Webシステム構築基礎 第３回課題</h1>
         <p>吉井柊人(AAA24126)</p>
+        <a href="javascript:history.back();" class = "title-link">&lt;index.htmlに戻る</a>
     </header>
+    <h2>BMI指標計算</h2>
+<form oninput="bmi.value = Math.round(Number(weight.value) / Math.pow(Number(height.value)/100, 2) * 10) / 10">
+    <p><label>体重(kg)：<input name="weight" type="number" step="any"></label></p>
+    <p><label>身長(cm)：<input name="height" type="number" step="any"></label></p>
+    <p><label>BMI：<output name="bmi"></output></label></p>
+</form>
     <div>
       <h2>おすすめの旅行先</h2>
       <h3>南木曽</h3>
@@ -17,7 +24,6 @@
           以前、家族旅行でTAOYA木曽路に宿泊した、<br>
           真夏にも関わらず涼しく、景色が綺麗で星もよく見えた。
       </p>
-      <a href="index.html">お勧めの食べ物</a>
     </div>
 </body>
 </html>
