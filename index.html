@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webシステム構築基礎 第２回課題</title>
+    <title>Webシステム構築基礎 第３回課題</title>
 </head>
 <body>
     <header>
-        <h1>Webシステム構築基礎 第２回課題</h1>
+        <h1>Webシステム構築基礎 第３回課題</h1>
         <p>吉井柊人(AAA24126)</p>
-        <img src = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRksC5BptofSNheVVuyQhbEnLQD14yD824zNXOoyYNyylfC3oh0ruCjdPPbHb80Kl_I2nhx9xmOx_vS4liFl9tKpEDJLZjf2rHiV0662EzA8DQkPqL_gTz9UPjImIvAnUqix2iwlH8PSxD/s800/food_moritsuke_good.png" width = 100px, height = auto , alt = "鮭のムニエル">
-    </header>
+        <a href="second.html">second.htmlに移動する</a>
+        </header>
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            if (hours < 10) hours = '0' + hours;
+            if (minutes < 10) minutes = '0' + minutes;
+            if (seconds < 10) seconds = '0' + seconds;
+            var timeString = hours + ':' + minutes + ':' + seconds;
+            document.getElementById('clock').innerHTML = timeString;
+        }
+        setInterval(updateClock, 1000);
+        window.onload = updateClock;
+    </script>
+    <img src = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRksC5BptofSNheVVuyQhbEnLQD14yD824zNXOoyYNyylfC3oh0ruCjdPPbHb80Kl_I2nhx9xmOx_vS4liFl9tKpEDJLZjf2rHiV0662EzA8DQkPqL_gTz9UPjImIvAnUqix2iwlH8PSxD/s800/food_moritsuke_good.png" width = 100px, height = auto , alt = "鮭のムニエル">
     <div>
         <h2>お勧めの食べ物</h2>
         <h3>鮭のムニエル</h3>
         <p>塩味が強くておいしい、ごはんが進む</p>
-        <a href="second.html">お勧めの旅行先</a>
     </div>
     
     <h1>🌐 Phase 0-1: HTML基礎確認</h1>
